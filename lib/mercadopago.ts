@@ -21,7 +21,7 @@ export async function createPreference(productId, ref, data) {
 			},
 		],
 		external_reference: ref,
-		notification_url: "http://localhost:3000/api/webhooks/mercadopago",
+		notification_url: "https://dwf-m9-pagos-pi.vercel.app/",
 	};
 	const newPreference = await mercadopago.preferences.create(preference);
 	return newPreference;
