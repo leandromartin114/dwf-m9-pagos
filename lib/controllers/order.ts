@@ -35,7 +35,8 @@ export async function getAndUpdateOrder(data) {
 	if (topic == "merchant_order") {
 		const merchantOrder = await getMerchantOrder(id);
 		const order = new Order(merchantOrder.external_reference);
-		order.data.state = merchantOrder.order_status;
+		order.data.status = merchantOrder.order_status;
+		order.data.merchant_order = merchantOrder.id;
 		await order.push();
 		const msg = {
 			to: order.data.email,
