@@ -1,0 +1,32 @@
+{
+	"name": "pagos",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:leandromartin114/dwf-m9-pagos",
+	"author": "Leandro <leandrom.roldan@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next"
+	},
+	"dependencies": {
+		"@sendgrid/mail": "^7.7.0",
+		"date-fns": "^2.29.3",
+		"firebase-admin": "^11.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"mercadopago": "^1.5.14",
+		"micro": "^9.4.1",
+		"micro-method-router": "^0.1.0",
+		"next": "^12.3.1",
+		"parse-bearer-token": "^1.0.1",
+		"random-seed": "^0.3.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.8.3",
+		"@types/react": "18.0.21",
+		"typescript": "4.8.4"
+	}
+}
